@@ -1,0 +1,21 @@
+@import "base/reset";
+@import "base/fonts";
+@import "base/colors";
+@import "base/base";
+
+@import "plugins/swiper";
+@import "plugins/fancybox";
+
+@import "components/header";
+@import "components/forms";
+@import "components/collapsible";
+@import "components/breadcrumbs";
+
+// @import "pages/news";
+// @import "pages/kurs";
+
+
+@import "components/footer";
+@import "main_640";
+
+@import "base/helpers";

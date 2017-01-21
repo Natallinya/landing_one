@@ -1,0 +1,67 @@
+/* ==========================================================================
+                HEADER STYLES
+   ========================================================================== */
+
+html {
+    height: auto;
+    min-height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    @include musreg;
+    background: #493f41;
+
+}
+
+.site-body {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    width: 100%;
+    &:after {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+    &.menu-open {
+        &:after {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1350px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: #343230;
+}
+
+
+
+.site-header {
+    position: relative;
+    z-index: 100;
+    flex: 0 0 auto;
+
+}
+
+.site-inner {
+    flex: 1 1 auto;
+}

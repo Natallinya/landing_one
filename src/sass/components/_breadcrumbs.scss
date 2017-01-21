@@ -1,0 +1,32 @@
+/* ==========================================================================
+                BREADCRUMBS STYLES
+   ========================================================================== */
+
+.breadcrumbs {
+    line-height: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.breadcrumbs__link {
+    display: inline-block;
+    margin-right: 2.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #666666;
+    position: relative;
+}
+
+.breadcrumbs__link[href] {
+    text-decoration: underline;
+    &:after {
+        content:'';
+        width: 7px;
+        height: 10px;
+        position: absolute;
+        right: -14px;
+        top: 5px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAQAAADSxYyGAAAAWUlEQVQI10XMMQqAMBSD4WDbzUlR8AgODiJeRFBQdHH4D9DextM6lEfJ9EESMTAhi+hJzIWiI7EUipbIWigaIuCNjpePOsNzceJyOXBz4PI28LBT2fPIZkA/P94i/TFqWssAAAAASUVORK5CYII=);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+}

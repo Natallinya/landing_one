@@ -1,0 +1,23 @@
+.collapsible-closed {
+    [data-collapsible-body] {
+        height: 0!important;
+    }
+}
+
+[data-collapsible-body] {
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+[data-collapsible] {
+
+}
+
+[data-collapsible-header] {
+
+}
+
+
+[data-collapsible-inner] {
+
+}

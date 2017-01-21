@@ -1,0 +1,21 @@
+/* ==========================================================================
+                FOOTER STYLES
+   ========================================================================== */
+
+.site-footer {
+    flex: 0 0 auto;
+
+    box-sizing: border-box;
+    .wrapper {
+        background: #722222 url('/img/bg_footer.png') 0 50% no-repeat;
+        background-size: cover;
+        padding: 2.5rem 3rem 3rem;
+    }
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
