@@ -1,96 +1,11 @@
 @font-face {
-    font-family: 'museobold';
-    src: url('fonts/MuseoSansBold.eot');
-    src: url('fonts/MuseoSansBold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSansBold.woff') format('woff'),
-    url('fonts/MuseoSansBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'MuseoSans700';
-    src: url('fonts/MuseoSansBold.eot');
-    src: url('fonts/MuseoSansBold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSansBold.woff') format('woff'),
-    url('fonts/MuseoSansBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: monteserrat_regular;
+    src: url('fonts/Montserrat-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'museomedium';
-    src: url('fonts/MuseoSansMedium.eot');
-    src: url('fonts/MuseoSansMedium.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSansMedium.woff') format('woff'),
-    url('fonts/MuseoSansMedium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'MuseoSans500';
-    src: url('fonts/MuseoSansMedium.eot');
-    src: url('fonts/MuseoSansMedium.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSansMedium.woff') format('woff'),
-    url('fonts/MuseoSansMedium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'museoregular';
-    src: url('fonts/MuseoSansRegular.eot');
-    src: url('fonts/MuseoSansRegular.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSansRegular.woff') format('woff'),
-    url('fonts/MuseoSansRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'MuseoSans300';
-    src: url('fonts/MuseoSansRegular.eot');
-    src: url('fonts/MuseoSansRegular.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSansRegular.woff') format('woff'),
-    url('fonts/MuseoSansRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'museolight';
-    src: url('fonts/MuseoSansLight.eot');
-    src: url('fonts/MuseoSansLight.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSansLight.woff') format('woff'),
-    url('fonts/MuseoSansLight.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'MuseoSans100';
-    src: url('fonts/MuseoSansLight.eot');
-    src: url('fonts/MuseoSansLight.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSansLight.woff') format('woff'),
-    url('fonts/MuseoSansLight.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@mixin musbold {
-    font-family: 'museobold', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-@mixin musmed {
-    font-family: 'museomedium', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-@mixin musreg {
-    font-family: 'museoregular', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-@mixin muslt {
-    font-family: 'museolight', sans-serif;
-    font-weight: normal;
-    font-style: normal;
+    font-family: monteserrat_extra_bold;
+    src: url('fonts/Montserrat-ExtraBold.otf');
 }
 
 
