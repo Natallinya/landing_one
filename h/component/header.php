@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="/dist/main.css" type="text/css">
 </head>
 
-<body class="page-<?=$page?>" data-page="<?=$page?>">
+<body>
 
 <div class="site-body">
+    <div class="center-body">
     <header class="site-header">
         <div class="wrapper">
-
+Кукууу
         </div>
     </header>
