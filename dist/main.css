@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* html5doctor.com Reset v1.6.1 - http://cssreset.com */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
@@ -70,6 +71,14 @@ input, select {
 @font-face {
   font-family: monteserrat_extra_bold;
   src: url("fonts/Montserrat-ExtraBold.otf"); }
+
+@font-face {
+  font-family: monteserrat_light;
+  src: url("fonts/Montserrat-Light.otf"); }
+
+@font-face {
+  font-family: monteserrat_semibold;
+  src: url("fonts/Montserrat-SemiBold.otf"); }
 
 a {
   text-decoration: none;
@@ -478,7 +487,7 @@ html {
 
 body {
   width: 100%;
-  background-color: #22182a; }
+  background-color: white; }
 
 .site-body {
   max-width: 1923px;
@@ -558,6 +567,9 @@ body {
   margin-left: 25px; }
 
 .main_actions button {
+  margin-top: 75px; }
+
+button {
   width: 260px;
   height: 65px;
   border-width: 3px;
@@ -569,12 +581,292 @@ body {
   text-transform: uppercase;
   font-size: 18px;
   color: white;
-  cursor: pointer;
-  margin-top: 75px; }
+  cursor: pointer; }
 
 .main_actions button:hover {
   background-color: #753d9d;
   border-color: #753d9d; }
+
+.about {
+  width: 648px;
+  font-family: monteserrat_light; }
+  .about p {
+    margin-top: 38px;
+    font-size: 15px;
+    line-height: 26px;
+    text-transform: none;
+    color: #0d113d;
+    margin-bottom: 50px; }
+  .about .color {
+    color: #0d113d;
+    border-color: #0d113d;
+    margin-bottom: 75px; }
+
+.title_about {
+  width: 360px;
+  margin-top: 258px;
+  font-size: 36px;
+  color: #0d113d;
+  text-transform: uppercase;
+  line-height: 44px; }
+  .title_about .we_are {
+    font-family: monteserrat_semibold; }
+  .title_about .bloom {
+    font-family: monteserrat_semibold;
+    color: #753d9d; }
+  .title_about .line {
+    height: 85px;
+    width: 4px;
+    border-radius: 3px;
+    background-color: #753d9d;
+    float: left;
+    margin-right: 8px; }
+
+.picture_about {
+  float: right;
+  background-image: url("img/pict_about.png");
+  width: 470px;
+  height: 383px;
+  margin-top: 258px; }
+
+.border_line {
+  height: 3px;
+  width: 100%;
+  background-image: url("img/border.png");
+  margin-bottom: 66px; }
+
+.scills {
+  vertical-align: middle;
+  width: 1156px;
+  margin: 0 auto; }
+
+.scills_icon {
+  font-family: monteserrat_light;
+  font-size: 15px;
+  color: #0d113d;
+  width: 356px;
+  margin-right: 35px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 70px; }
+  .scills_icon p {
+    font-family: monteserrat_semibold;
+    font-size: 21px;
+    color: #0d113d;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    padding-top: 22px; }
+  .scills_icon .pict_scills1, .scills_icon .pict_scills2, .scills_icon .pict_scills3 {
+    height: 66px;
+    width: 66px;
+    margin-right: 20px;
+    float: left; }
+  .scills_icon .pict_scills1 {
+    background-image: url("img/scills_1.png"); }
+  .scills_icon .pict_scills2 {
+    background-image: url("img/scills_2.png"); }
+  .scills_icon .pict_scills3 {
+    background-image: url("img/scills_3.png"); }
+
+.none_margin {
+  margin-right: 0; }
+
+.picture_action {
+  width: 1917px;
+  height: 383px;
+  background-image: url("img/pict_act.png"); }
+
+.mobile {
+  font-family: monteserrat_semibold;
+  color: #ffffff;
+  font-size: 50px;
+  width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -269px; }
+  .mobile button {
+    background-color: #753d9d;
+    color: white;
+    margin-top: 60px;
+    border-width: 0px;
+    margin-bottom: 150px; }
+
+@keyframes go-left-right {
+  0% {
+    margin-left: 0px; }
+  /* назовём анимацию: "go-left-right" */
+  60% {
+    margin-left: 208px;
+    /* от: left: 0px */ }
+  71% {
+    margin-left: 180px; }
+  81% {
+    margin-left: 208px; }
+  91% {
+    margin-left: 195px; }
+  100% {
+    margin-left: 208px;
+    /* до: left: 100%-50px */ } }
+
+@keyframes go-smart {
+  0% {
+    margin-left: 0px; }
+  /* назовём анимацию: "go-left-right" */
+  60% {
+    margin-left: 540px;
+    /* от: left: 0px */ }
+  71% {
+    margin-left: 512px; }
+  81% {
+    margin-left: 540px; }
+  91% {
+    margin-left: 527px; }
+  100% {
+    margin-left: 540px;
+    /* до: left: 100%-50px */ } }
+
+.services {
+  width: 1144px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 72px;
+  margin-left: auto; }
+  .services .title_services_inner {
+    margin-right: -28px; }
+  .services .title_services {
+    color: #0d113d;
+    font-size: 26px;
+    font-family: monteserrat_semibold;
+    text-transform: uppercase;
+    margin-bottom: 34px; }
+    .services .title_services p {
+      padding-top: 7px;
+      padding-left: 13px; }
+    .services .title_services .line {
+      height: 38px;
+      width: 5px;
+      border-radius: 3px;
+      background-color: #753d9d;
+      float: left; }
+  .services .services_icon {
+    height: 340px;
+    width: 263px;
+    float: left;
+    margin-right: 28px;
+    border-radius: 8px;
+    margin-bottom: 29px;
+    cursor: pointer; }
+    .services .services_icon p {
+      margin-top: -22px;
+      margin-left: 24px;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-family: monteserrat_semibold;
+      color: white; }
+  .services .services_icon:hover .main_p {
+    display: none; }
+  .services .services_icon:hover .show_more {
+    margin-top: 22px;
+    background: rgba(102, 51, 153, 0.8);
+    opacity: 1;
+    transition: opacity 0.3s linear; }
+  .services .services_icon:hover .pointer {
+    animation: go-left-right 0.7s linear; }
+  .services .smart_tv:hover .main_p {
+    display: none; }
+  .services .smart_tv:hover .show_more {
+    margin-top: 22px;
+    background: rgba(102, 51, 153, 0.8);
+    opacity: 1;
+    transition: opacity 0.3s linear; }
+  .services .smart_tv:hover .pointer {
+    animation: go-smart 0.7s linear;
+    margin-left: 540px; }
+  .services .strategy {
+    background: url(img/strategy.png); }
+  .services .experince {
+    background-image: url(img/experince.png); }
+  .services .technology {
+    background-image: url(img/technology.png); }
+  .services .cms {
+    background-image: url(img/cms.png); }
+  .services .smart_tv {
+    float: left;
+    width: 653px;
+    height: 338px;
+    background-image: url(img/smart_tv.png);
+    cursor: pointer; }
+    .services .smart_tv p {
+      margin-top: -22px;
+      margin-left: 24px;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-family: monteserrat_semibold;
+      color: white; }
+  .services .all_services {
+    width: 457px;
+    height: 338px;
+    background-color: #0d113d;
+    border-radius: 8px;
+    float: left;
+    margin-left: 28px;
+    cursor: pointer; }
+    .services .all_services p {
+      font-family: monteserrat_semibold;
+      font-size: 22px;
+      color: white;
+      margin-left: 255px;
+      margin-top: 245px;
+      text-transform: uppercase;
+      transition: margin-top 0.4s linear; }
+    .services .all_services .line_small {
+      height: 5px;
+      width: 90px;
+      border-radius: 2px;
+      background-color: #f5f5f5;
+      float: left;
+      margin-left: 255px;
+      margin-top: 10px;
+      transition: margin-left 0.4s linear; }
+  .services .all_services:hover p {
+    margin-top: 260px; }
+  .services .all_services:hover .line_small {
+    margin-left: 290px; }
+  .services .show_more {
+    color: #f5f5f5;
+    width: 100%;
+    height: 340px;
+    opacity: 0;
+    border-radius: 8px; }
+    .services .show_more .title_show {
+      padding-top: 125px;
+      margin-bottom: 20px;
+      margin-left: 15px; }
+    .services .show_more .line_show {
+      width: 119px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #f5f5f5;
+      margin-left: 15px;
+      margin-bottom: 20px; }
+    .services .show_more span {
+      font-family: monteserrat_light;
+      font-size: 14px;
+      line-height: 22px;
+      color: white;
+      display: inline-block;
+      margin-left: 15px;
+      margin-bottom: 20px; }
+    .services .show_more .pointer {
+      width: 44px;
+      height: 30px;
+      background-image: url(img/pointer.png);
+      margin-left: 208px; }
+
+.services:after {
+  content: "";
+  display: block;
+  clear: both; }
 
 @media (max-width: 640px) {
   body {
