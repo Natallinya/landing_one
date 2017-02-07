@@ -54,10 +54,86 @@ body {
     font-size: 15px;
     color: #f5f5f5;
     cursor: pointer;
+
   }
   li:hover {
     color: #753d9d;
   }
+  .drop{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding-bottom: 30px;
+.triangle{
+  position:absolute;
+  width:16px;
+  height:9px;
+  background: url("img/down_pointer.png");
+  opacity:0;
+  top:22.5px;
+  left:50%;
+}
+    .dropdownContain{
+      position:absolute;
+      width: 160px;
+      border-radius: 5px;
+      background-color: white;
+      visibility: hidden;
+      margin-left: -40px;
+      top:20px;
+
+    }
+ .drop_item{
+   height: 45px;
+  float: none;
+   line-height: 45px;
+   color: #303251;
+   text-transform: none;
+   padding-right: 10px;
+   vertical-align: middle;
+ }
+
+    .drop_item:not(:last-child):after {
+      content:"";
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid  #e4e4e4;
+    }
+
+  }
+  .drop_item:hover{
+    color:#6b3891;
+  }
+.drop_item:hover:before{
+  content:"";
+  height:27px;
+  width: 4px;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #6b3891;
+  vertical-align: middle;
+}
+  .exit{
+    transform: rotate(0deg);
+
+  }
+  .exit:hover{
+    transform:rotate(360deg) ;
+
+    transition: transform 0.3s linear;
+  }
+  .drop:hover .dropdownContain{
+   visibility: visible;
+    top:45px;
+    transition: top 0.1s linear;
+  }
+  .drop:hover .triangle{
+    opacity: 1;
+  }
+  .clear{
+    display: inline-block;
+  }
+
 }
 
 .exit {
@@ -73,6 +149,7 @@ body {
 .swiper-container {
   width: 100%;
   height: 760px;
+  background-color: #1e172c;
 }
 
 .swiper-slide img {
@@ -273,9 +350,9 @@ button {
   0% {
     margin-left: 0px;
   }
-  /* назовём анимацию: "go-left-right" */
+
   60% {
-    margin-left: 208px; /* от: left: 0px */
+    margin-left: 208px;
   }
   71% {
     margin-left: 180px;
@@ -287,7 +364,7 @@ button {
     margin-left: 195px;
   }
   100% {
-    margin-left: 208px; /* до: left: 100%-50px */
+    margin-left: 208px;
   }
 }
 
@@ -295,9 +372,9 @@ button {
   0% {
     margin-left: 0px;
   }
-  /* назовём анимацию: "go-left-right" */
+
   60% {
-    margin-left: 540px; /* от: left: 0px */
+    margin-left: 540px;
   }
   71% {
     margin-left: 512px;
@@ -309,7 +386,7 @@ button {
     margin-left: 527px;
   }
   100% {
-    margin-left: 540px; /* до: left: 100%-50px */
+    margin-left: 540px;
   }
 }
 
@@ -323,25 +400,7 @@ button {
   .title_services_inner {
     margin-right: -28px;
   }
-  .title_services {
-    color: #0d113d;
-    font-size: 26px;
-    font-family: monteserrat_semibold;
-    text-transform: uppercase;
-    margin-bottom: 34px;
-    p {
-      padding-top: 7px;
-      padding-left: 13px;
-    }
-    .line {
-      height: 38px;
-      width: 5px;
-      border-radius: 3px;
-      background-color: #753d9d;
-      float: left;
 
-    }
-  }
   .services_icon {
     height: 340px;
     width: 263px;
@@ -502,4 +561,83 @@ button {
   content: "";
   display: block;
   clear: both;
+}
+.title_line {
+  color: #0d113d;
+  font-size: 26px;
+  font-family: monteserrat_semibold;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  p {
+    padding-top: 7px;
+    padding-left: 13px;
+  }
+  .line {
+    height: 38px;
+    width: 5px;
+    border-radius: 3px;
+    background-color: #753d9d;
+    float: left;
+
+  }
+}
+.support{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:68px;
+width: 980px;
+  .pict_support{
+    width:261px;
+    height: 370px;
+    background-image: url(img/girl_support.png);
+
+
+  }
+  .text_support{
+    float: right;
+    width:552px;
+    font-family: monteserrat_light;
+    font-size: 15px;
+    color: #0d113d;
+    line-height: 26px;
+    p{
+      font-family: monteserrat_semibold;
+      font-size: 33px;
+      margin-bottom: 15px;
+    }
+  }
+  ul{
+    margin-top:42px;
+
+    li{
+      font-family: monteserrat_light;
+      font-size: 15px;
+      color: #767474;
+      line-height: 35px;
+    }
+    li:before {
+      content: '';
+      background-color:#767474;
+      display:inline-block;
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+      margin-right: 7px;
+    }
+
+  }
+}
+.contact{
+  font-family: monteserrat_semibold;
+  font-size: 25px;
+  height:160px;
+  color: white;
+  line-height: 160px;
+  width: 100%;
+  text-align:center;
+  background-color: #753d9d ;
+  margin-bottom: 69px;
+  .change{
+    margin-left: 310px;
+  }
 }

@@ -78,14 +78,106 @@
             <div class="wrapper">
                 <div class="menu">
                     <ul>
-                        <li><a href="#"></a>home</li>
-                        <li><a href="#"></a>about us</li>
-                        <li><a href="#"></a>services</li>
-                        <li><a href="#"></a>portfolio</li>
-                        <li><a href="#"></a>team</li>
-                        <li><a href="#"></a>price</li>
-                        <li><a href="#"></a>blog</li>
-                        <li><a href="#"></a>contact</li>
+                        <li class="drop"><a href="#"></a>home
+                            <div class="triangle"></div>
+                            <div class="dropdownContain">
+
+                                <ul >
+                                    <li class="drop_item"> Home1</li>
+                                    <li class="drop_item ">  Home2</li>
+                                </ul>
+
+                            </div>
+
+                        </li>
+                        <li class="drop"><a href="#"></a>about us
+
+                            <div class="triangle"></div>
+                            <div class="dropdownContain">
+
+                                    <ul >
+                                        <li class="drop_item"> Who we are</li>
+                                        <li class="drop_item">  Adwards</li>
+                                        <li class="drop_item">  Clients</li>
+                                        <li class="drop_item ">  Career</li>
+                                    </ul>
+
+                            </div>
+
+
+                        </li>
+
+                        <li class="drop"><a href="#"></a>services
+                            <div class="triangle"></div>
+                            <div class="dropdownContain">
+
+                                <ul >
+                                    <li class="drop_item"> Services1</li>
+                                    <li class="drop_item"> Services2</li>
+                                    <li class="drop_item"> Services3</li>
+                                    <li class="drop_item"> Services4</li>
+                                    <li class="drop_item ">Services5</li>
+                                </ul>
+
+                            </div></li>
+                        <li class="drop"><a href="#"></a>portfolio
+                            <div class="triangle"></div>
+                            <div class="dropdownContain">
+
+                                <ul >
+                                    <li class="drop_item"> Work1</li>
+                                    <li class="drop_item "> Work2</li>
+                                    <li class="drop_item ">  Work3</li>
+                                    <li class="drop_item "> Work4</li>
+                                </ul>
+
+                            </div></li>
+                        <li class="drop"><a href="#"></a>team
+                            <div class="triangle"></div>
+                            <div class="dropdownContain">
+
+                                <ul >
+                                    <li class="drop_item"> Team1</li>
+                                    <li class="drop_item"> Team2</li>
+
+                                </ul>
+
+                            </div></li>
+                        <li class="drop"><a href="#"></a>price
+                            <div class="triangle"></div>
+                            <div class="dropdownContain">
+
+                                <ul >
+                                    <li class="drop_item"> Price1</li>
+                                    <li class="drop_item"> Price2</li>
+                                    <li class="drop_item"> Price3</li>
+                                    <li class="drop_item"> Price4</li>
+                                    <li class="drop_item ">Price5</li>
+                                </ul>
+
+                            </div></li>
+                        <li class="drop"><a href="#"></a>blog
+                            <div class="triangle"></div>
+                            <div class="dropdownContain">
+
+                                <ul >
+                                    <li class="drop_item"> Blog1</li>
+                                    <li class="drop_item">  Blog2</li>
+                                    <li class="drop_item">  Blog3</li>
+
+                                </ul>
+
+                            </div></li>
+                        <li class="drop"><a href="#"></a>contact
+                            <div class="triangle"></div>
+                            <div class="dropdownContain">
+
+                                <ul >
+                                    <li class="drop_item"> Contact1</li>
+
+                                </ul>
+
+                            </div></li>
                         <li class="exit"></li>
                     </ul>
                 </div>
@@ -145,7 +237,7 @@
     </div>
     <div class="services">
         <div class="title_services_inner">
-            <div class="title_services">
+            <div class="title_line">
                 <div class="line"></div>
                 <p class="title">services</p>
             </div>
@@ -193,6 +285,22 @@
         </div>
     </div>
     <div class="border_line"></div>
+    <div class="support"> <div class="text_support">
+            <p>Great Support System</p> Lorem Ipsum has been the industry's standardu text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            <ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Morbi quis felis in arcu congue posuere.</li>
+                <li>Vivamus euismod felis ut lacus dictum condimentum.</li>
+                <li>Praesent laoreet orci commodo dictum aliquet.</li></ul></div>
+        <div class="pict_support"></div> </div>
+    <div class="contact">Contact with us for start your dream project
+        <button class="color change">Contact us</button></div>
+    <portfolio>
+        <div class="title_line">
+            <div class="line"></div>
+            <p class="title">portfolio</p>
+        </div>
+    </portfolio>
     <footer class="site-footer">
 
         <div class="footer__inner">
@@ -208,9 +316,9 @@
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-        //  autoplay:3000,
+//          autoplay:3000,
         // If we need pagination
-        pagination: '.swiper-pagination',
+        pagination: '.swiper-pagination'
 
 
         // And if we need scrollbar
